@@ -1,108 +1,308 @@
+---
+layout: null
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>V. Neha | Law Student & Researcher</title>
-<link rel="stylesheet" href="style.css">
+<title>V. Neha | Law & Research</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ---------------- BASE STYLING ---------------- */
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    transition: 0.4s ease;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ---------------- DARK MODE ---------------- */
+
+body.dark {
+    background: #0e0e11;
+    color: #f2f2f2;
+}
+
+.dark header {
+    background: #111;
+}
+
+.dark .card {
+    background: #1e1e26;
+    border-left: 3px solid #c9a227;
+}
+
+/* ---------------- LIGHT MODE ---------------- */
+
+body.light {
+    background: #ffffff;
+    color: #111;
+}
+
+.light header {
+    background: #f4f4f4;
+}
+
+.light .card {
+    background: #f9f9f9;
+    border-left: 3px solid #111;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    color: inherit;
+}
+
+.toggle-btn {
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-image img {
+    width: 240px;
+    border-radius: 50%;
+    border: 3px solid #c9a227;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    background: #c9a227;
+    color: black;
+}
+
+/* ---------------- SECTIONS ---------------- */
+
+.section {
+    padding: 70px 0;
+}
+
+.card {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+</style>
+
 </head>
 
-<body>
+<body class="dark">
 
 <header>
-    <div class="container">
-        <h1>V. Neha</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#research">Research</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
+<div class="container">
+<h1>V. Neha</h1>
+
+<nav>
+<a href="#about">About</a>
+<a href="#academics">Academics</a>
+<a href="#experience">Experience</a>
+<a href="#research">Research</a>
+<a href="#skills">Skills</a>
+<a href="#interests">Interests</a>
+<a href="#contact">Contact</a>
+<span class="toggle-btn" onclick="toggleMode()">☼</span>
+</nav>
+
+</div>
 </header>
 
 <section class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h2>Law Student | Judicial Intern | Researcher</h2>
-            <p>B.A. LL.B. (Hons.), SASTRA Deemed University</p>
-            <a href="V_Neha_CV.pdf" class="btn" download>Download CV</a>
-        </div>
-        <div class="hero-image">
-            <img src="profile.jpg" alt="V Neha">
-        </div>
-    </div>
+<div class="container hero-content">
+
+<div>
+<h2>Law Student | Judicial Intern | Aspiring Academic</h2>
+<p>
+Final-year B.A. LL.B. (Hons.) student with a strong academic record and interdisciplinary research orientation. 
+My experience spans judicial research, criminal prosecution, securities regulation, non-profit governance and corporate regulatory practice. 
+I aspire to pursue a career in legal academia, contributing to scholarship and teaching in emerging areas of law.
+</p>
+<a href="V_Neha_CV.pdf" class="btn" download>Download CV</a>
+</div>
+
+<div class="hero-image">
+<img src="profile.jpg" alt="V Neha">
+</div>
+
+</div>
 </section>
 
-<section id="about" class="section">
-    <div class="container">
-        <h3>About</h3>
-        <p>
-        Final-year B.A. LL.B. (Hons.) student with academic distinction and diverse exposure across
-        judicial research, prosecution, litigation chambers and corporate regulatory practice.
-        My primary interests lie in Intellectual Property Law, Cyber Law, Competition Law and Consumer Protection,
-        with long-term aspirations in legal research and academia.
-        </p>
-    </div>
+<section id="academics" class="section">
+<div class="container">
+<h3>Academics</h3>
+
+<p><strong>B.A. LL.B. (Hons.) – SASTRA Deemed University</strong></p>
+<p>CGPA: 8.90 | 9th Semester SGPA: 9.4</p>
+
+<p><strong>Senior Secondary (12th)</strong> – 89.17%</p>
+<p><strong>Secondary (10th)</strong> – 82.17%</p>
+
+</div>
 </section>
 
-<section id="experience" class="section dark">
-    <div class="container">
-        <h3>Internship Experience</h3>
+<section id="experience" class="section">
+<div class="container">
+<h3>Internship Experience</h3>
 
-        <div class="card">
-            <h4>Judicial Internship – Calcutta High Court</h4>
-            <p>Assisted in arbitration, intellectual property and constitutional matters.
-            Researched Article 226, PIL evolution, bail jurisprudence and Section 37 of the Arbitration Act.</p>
-        </div>
+<div class="card">
+<h4>Judicial Internship – Calcutta High Court</h4>
+<p>Assisted in arbitration, intellectual property and constitutional matters. Researched Article 226, evolution of Public Interest Litigation and bail jurisprudence.</p>
+</div>
 
-        <div class="card">
-            <h4>Reliance Jio Infocomm Ltd.</h4>
-            <p>Worked on consumer complaints, TRAI regulations, trademark misuse,
-            and comparative regulatory research in telecom and technology law.</p>
-        </div>
+<div class="card">
+<h4>Reliance Jio Infocomm Ltd.</h4>
+<p>Worked on consumer complaints, TRAI regulations, trademark misuse and regulatory research in telecom and technology law.</p>
+</div>
 
-        <div class="card">
-            <h4>Office of Additional Public Prosecutor</h4>
-            <p>Observed prosecution strategies in NDPS and corruption cases;
-            conducted legal research and drafting assistance.</p>
-        </div>
+<div class="card">
+<h4>Office of Additional Public Prosecutor</h4>
+<p>Analysed prosecution strategy in NDPS and corruption matters and assisted in drafting petitions and notes of arguments.</p>
+</div>
 
-        <div class="card">
-            <h4>Litigation Chambers (Consumer & SEBI)</h4>
-            <p>Researched consumer protection and securities regulations,
-            assisted in drafting and courtroom preparation.</p>
-        </div>
+<div class="card">
+<h4>Litigation Chambers – Consumer & SEBI Matters</h4>
+<p>Conducted research on consumer protection and securities regulation; assisted in drafting and courtroom preparation.</p>
+</div>
 
-    </div>
+<div class="card">
+<h4>Sevalaya NGO, Chennai</h4>
+<p>Engaged in regulatory compliance review, community outreach and mentorship initiatives, gaining insight into governance structures of non-profit organisations.</p>
+</div>
+
+</div>
 </section>
 
 <section id="research" class="section">
-    <div class="container">
-        <h3>Research & Achievements</h3>
-        <ul>
-            <li>Published Research Paper – Agricultural Labour (International Journal for Multidisciplinary Research)</li>
-            <li>Winner – Intra-college Appellate Moot (Competition Law)</li>
-            <li>Peer Tutor – Competition Law, Criminal Law, Tax & Intellectual Property Law</li>
-        </ul>
-    </div>
+<div class="container">
+<h3>Research & Publications</h3>
+
+<ul>
+<li>Published Paper – Agricultural Labour: Employment and Comparative Study (International Journal for Multidisciplinary Research)</li>
+<li><strong>Under Review:</strong> “Evolving Authorship in the Digital Age: Bridging the Normative Gap in Indian Copyright Law on Transformative Use”</li>
+<li><strong>Under Review:</strong> “Informed Consent in Data Collection: Closing the Loopholes in Cookies, APIs and Telemetry Data”</li>
+<li>Top Performer (92%) – SWAYAM Course: Artificial Intelligence, Law and Justice</li>
+<li>Currently Pursuing – Certificate Course in Advanced Legal Drafting (Lawmarg)</li>
+</ul>
+
+</div>
 </section>
 
-<section id="contact" class="section dark">
-    <div class="container">
-        <h3>Contact</h3>
-        <p>Email: nehavivek2004@gmail.com</p>
-        <p>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/NehaVivek007" target="_blank">GitHub</a>
-        </p>
-    </div>
+<section id="skills" class="section">
+<div class="container">
+<h3>Skills</h3>
+
+<h4>Research & Analytical Skills</h4>
+<ul>
+<li>Doctrinal legal research</li>
+<li>Case law synthesis and comparative analysis</li>
+</ul>
+
+<h4>Drafting & Documentation</h4>
+<ul>
+<li>Preparation of notes of arguments</li>
+<li>Regulatory benchmarking and compliance review</li>
+</ul>
+
+<h4>Technical & Legal Tools</h4>
+<ul>
+<li>SCC Online</li>
+<li>Manupatra</li>
+<li>Indian Kanoon</li>
+<li>Microsoft Office Suite</li>
+<li>Familiarity with Bluebook and OSCOLA citation standards</li>
+</ul>
+
+</div>
+</section>
+
+<section id="interests" class="section">
+<div class="container">
+<h3>Academic & Research Interests</h3>
+
+<ul>
+<li>Environmental Law and Climate Regulation</li>
+<li>Artificial Intelligence and Technology Law</li>
+<li>Competition Law</li>
+<li>Taxation Law</li>
+<li>Commercial and Corporate Law</li>
+<li>Psychology and Behavioural Studies</li>
+</ul>
+
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="container">
+<h3>Contact</h3>
+<p>Email: nehavivek2004@gmail.com</p>
+<p>
+<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+<a href="https://github.com/NehaVivek007" target="_blank">GitHub</a>
+</p>
+</div>
 </section>
 
 <footer>
-    <p>© 2026 V. Neha | nehavivek.github.io</p>
+<p>© 2026 V. Neha</p>
 </footer>
+
+<script>
+function toggleMode() {
+document.body.classList.toggle("dark");
+document.body.classList.toggle("light");
+}
+</script>
 
 </body>
 </html>
